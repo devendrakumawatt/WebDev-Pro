@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DK || Event Planner</title>
+    <script
+      src="https://kit.fontawesome.com/949c6af255.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        background: radial-gradient(silver, black);
+      }
+
+      .main-container {
+        display: grid;
+        border: 0px solid white;
+        box-shadow: 0 0 40px white;
+      }
+
+      .content-upper {
+        background-color: white;
+        display: grid;
+        width: 500px;
+        margin-bottom: 20px;
+        gap: 6px;
+        font-family: serif;
+      }
+      .content-lower {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 500px;
+        gap: 12px;
+      }
+
+      .logo {
+        text-align: center;
+        background-color: black;
+
+        img {
+          width: 150px;
+        }
+      }
+      .name {
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 1;
+        font-family: serif;
+
+        span {
+          font-size: 20px;
+        }
+      }
+
+      .name:hover {
+        text-shadow: 1px 2px 12px silver;
+        cursor: pointer;
+      }
+
+      .side-logo {
+        background-color: black;
+
+        img {
+          height: 200px;
+        }
+      }
+      .company-detail {
+        padding-left: 10px;
+        line-height: 0.5;
+        color: white;
+        background-color: black;
+
+        p {
+          font-family: "Times New Roman", Times, serif;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="content-upper">
+        <div class="logo">
+          <img src="logo.png" alt="logo img" />
+        </div>
+        <div class="name">
+          <h1>D<span>EVENDRA</span> &nbsp;K<span>UMAWAT</span></h1>
+          <h4>EVENT ORGANISER</h4>
+        </div>
+      </div>
+      <div class="content-lower">
+        <div class="side-logo">
+          <img src="logo.png" alt="logo img" />
+        </div>
+        <div class="company-detail">
+          <h2>DEVENDRA KUMAWAT</h2>
+          <h4>EVENT ORAGANISER</h4>
+          <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp; (580)226-5786</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i> &nbsp;&nbsp; theDK@gmail.com
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; 11, Harsh Rd.
+            Sanwali, Sikar, [Raj.]
+          </p>
+          <p><i class="fa-solid fa-globe"></i> &nbsp;&nbsp; www.theEVENT.com</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

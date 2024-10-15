@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Shoe</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Courier New", Courier, monospace;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        height: 100%;
+        background: linear-gradient(1deg, rgb(138, 127, 64), black);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        max-width: 400px;
+        position: relative;
+        transition: box-shadow 0.4s ease-in-out;
+        line-height: 1rem;
+      }
+
+      .content:hover {
+        box-shadow: 2px 2px 18px gray;
+      }
+
+      img {
+        object-fit: contain;
+        width: 300px;
+        border-radius: 18px;
+      }
+      h3 {
+        line-height: 1rem;
+      }
+
+      h1 {
+        text-shadow: 0 2px 2px goldenrod;
+      }
+
+      p {
+        line-height: 0.25rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        input::placeholder {
+          color: black;
+        }
+
+        input[type="email"] {
+          padding: 7px;
+          text-align: center;
+          margin-bottom: 4px;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+
+          placeholder {
+            color: black;
+          }
+        }
+
+        div {
+          display: flex;
+          margin-bottom: 4px;
+
+          .size {
+            padding: 6px;
+            width: 45%;
+            margin-right: auto;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+          }
+
+          .qnt {
+            padding: 6px;
+            width: 45%;
+            margin-left: auto;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+          }
+        }
+
+        button {
+          padding: 6px;
+          border: none;
+          border-radius: 4px;
+          font-size: 18px;
+          font-weight: bold;
+          background-color: white;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+          background-color: rgb(117, 106, 46);
+          cursor: pointer;
+        }
+      }
+
+      .para {
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 1px;
+      }
+
+      .last-line {
+        font-size: 12px;
+        line-height: 1px;
+      }
+
+      .tag {
+        height: 130px;
+        position: absolute;
+        right: -205px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img src="JORDAN SHOES.jpg" alt="Nike Shoe" />
+        <h1>Nike Air Max SNDR</h1>
+        <h3>Black and Metallic Gold</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" />
+          <div class="child-div">
+            <select class="size">
+              <option>Size</option>
+              <option>UK 06</option>
+              <option>UK 07</option>
+              <option>UK 08</option>
+              <option>UK 09</option>
+              <option>UK 10</option>
+            </select>
+
+            <select class="qnt">
+              <option>Quantity</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <!-- <input type="number" placeholder="Quantity" min="1" max="4" /> -->
+          </div>
+          <button>Pre Book</button>
+        </form>
+        <p class="para">Price:&nbsp; $218.68</p>
+        <p class="last-line">(Incl. of all Taxes)</p>
+        <img src="tag.png" alt="Coming soon tag" class="tag" />
+      </div>
+    </div>
+  </body>
+</html>
