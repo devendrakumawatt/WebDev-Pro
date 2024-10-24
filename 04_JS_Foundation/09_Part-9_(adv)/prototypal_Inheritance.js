@@ -1,18 +1,11 @@
-const person = {
-    name: "Devendra",
+function Person(name) {
+    this.name = name;
+  }
   
-    greet() {
-      console.log(`Hi, I am ${this.name}`);
-    },
+  Person.prototype.greet = function () {
+    console.log(`hello my name is ${this.name}`);
   };
   
-  person.greet();
-  
-  const greetFunction = person.greet;
-  greetFunction();
-  
-  const boundGreet = person.greet.bind({ name: "Dhruv" });
-  boundGreet();
-  
-  
+  let str = new Person("Devendra");
+  str.greet();
   
